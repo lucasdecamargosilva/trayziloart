@@ -64,7 +64,7 @@
     const WEBHOOK_BUY_CLICK = 'https://n8n.segredosdodrop.com/webhook/pl-provador-buy-click';
     const WEBHOOK_PIX = 'https://n8n.segredosdodrop.com/webhook/cacife-pix';
     const WEBHOOK_PIX_STATUS = 'https://n8n.segredosdodrop.com/webhook/cacife-pix-status';
-    const STORE_LOGO = 'https://images.tcdn.com.br/files/1392775/themes/17/img/settings/LO.jpeg';
+    const STORE_LOGO = 'https://lucasdecamargosilva.github.io/trayziloart/logo-ziloart.png';
     const PROVOU_LOGO = 'https://i.ibb.co/MD3B4FQf/Logo-provou-preto-1.png';
     const STAMP_SRC = 'https://cdn.shopify.com/s/files/1/0636/6334/1746/files/logo_provador.png?v=1772494793';
 
@@ -643,6 +643,7 @@
         }
         .q-powered-footer span { font-size: 9.5px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--c-muted); }
         /* ── Ziloart: azul #1152d1 ── */
+        #q-header-provador { background: #fff !important; }
         .q-btn-inline-provador { background: transparent !important; color: #1152d1 !important; border: 1px solid #1152d1 !important; border-radius: 50px !important; height: 50px !important; min-height: 50px !important; font-family: "Maven Pro", Lato, sans-serif !important; font-size: 17px !important; font-weight: 700 !important; letter-spacing: 0 !important; text-transform: uppercase !important; box-shadow: none !important; }
         .q-btn-inline-provador:hover { background: rgba(17, 82, 209, .06) !important; color: #1152d1 !important; }
         .q-btn-inline-provador svg { stroke: #1152d1 !important; }
@@ -720,7 +721,7 @@
         var storeImg = document.createElement('img');
         storeImg.src = STORE_LOGO;
         storeImg.alt = 'Ziloart Otica';
-        storeImg.style.cssText = 'height:28px;width:auto;object-fit:contain;';
+        storeImg.style.cssText = 'height:64px;width:auto;max-width:70%;object-fit:contain;';
         storeImg.onerror = function() { this.style.display = 'none'; };
         header.appendChild(storeImg);
         scroll.appendChild(header);
