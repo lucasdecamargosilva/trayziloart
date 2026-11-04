@@ -1344,6 +1344,8 @@
         function closeModal() { modal.style.display = 'none'; unlockBodyScroll(); 
             confirmedPhone = '';
             phoneConfirmation.close();
+            // Ziloart (04/11/2026, Lucas): quem fecha com o resultado na tela volta para o resultado ao reabrir.
+            if (stepResult.style.display === 'flex') return;
             // --- volta pra tela inicial ao fechar (pos-prova) + limpa input p/ 2a foto enviar ---
             try {
                 var _qsr = document.getElementById('q-step-result'); if (_qsr) _qsr.style.display = 'none';
