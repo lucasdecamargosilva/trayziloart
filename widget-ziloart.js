@@ -1665,12 +1665,8 @@
             var phoneOk = isValidBRPhone(nums);
             if (!phoneOk) { phoneErr.style.display = 'block'; phoneInput.focus(); return; }
             if (!termsCheck.checked) return;
-            if (confirmedPhone !== nums) {
-                confirmNumber.textContent = '+55 ' + phoneInput.value;
-                if (!phoneConfirmation.open) phoneConfirmation.showModal();
-                confirmPhoneBtn.focus();
-                return;
-            }
+            // Ziloart: sem confirmacao do WhatsApp antes de gerar (pedido do Lucas, 04/11/2026).
+            confirmedPhone = nums;
             var phone = '55' + nums;
             genBtn.disabled = true;
 
