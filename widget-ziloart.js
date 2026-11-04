@@ -643,6 +643,9 @@
         }
         .q-powered-footer span { font-size: 9.5px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--c-muted); }
         /* ── Ziloart: azul #1152d1 ── */
+        .q-btn-inline-provador { background: transparent !important; color: #1152d1 !important; border: 1px solid #1152d1 !important; border-radius: 50px !important; height: 50px !important; min-height: 50px !important; font-family: "Maven Pro", Lato, sans-serif !important; font-size: 15px !important; font-weight: 700 !important; letter-spacing: 0 !important; text-transform: uppercase !important; box-shadow: none !important; }
+        .q-btn-inline-provador:hover { background: rgba(17, 82, 209, .06) !important; color: #1152d1 !important; }
+        .q-btn-inline-provador svg { stroke: #1152d1 !important; }
         :root { --c-surface: #f3f7ff; --c-line: #c9daf8; }
         .q-btn-black { background: #1152d1 !important; }
         .q-btn-black:hover:not(:disabled) { background: #0d3fa3 !important; }
